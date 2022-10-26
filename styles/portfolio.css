@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--default-font-family);
+  line-height: 1.5;
 }
 
 h1,
@@ -20,12 +21,14 @@ h6 {
   font-weight: bold;
   color: black;
 }
-h1 {
+.hero h1 {
   font-size: 96px;
+}
+.about-section h1 {
+  font-size: 64px;
 }
 h2 {
   font-size: 64px;
-  line-height: 1.5;
 }
 p {
   font-size: 16px;
@@ -39,14 +42,17 @@ p {
 .hero {
   text-align: center;
   background: var(--secondary-color);
-  padding: 160px 0;
-  line-height: 1.5;
+  padding: 160px 20px;
 }
 
 .greeting {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
+}
+.about-section .introduction {
+  font-size: 18px;
+  font-weight: bold;
 }
 .introduction {
   font-size: 24px;
@@ -75,7 +81,6 @@ p {
   background: white;
   color: var(--primary-color);
   font-size: 16px;
-  line-height: 1.5;
   font-weight: 500;
 }
 
@@ -86,18 +91,21 @@ p {
   background: var(--primary-color);
   color: var(--paragraph-text-color);
   font-size: 16px;
-  line-height: 1.5;
   font-weight: 500;
 }
 
 .project-description {
   padding: 80px 40px;
-  line-height: 1.5;
+}
+.about-section {
+  padding: 160px 20px;
+}
+.about-section-content {
+  margin: 30px;
 }
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 2;
   }
 
   h2 {
@@ -105,10 +113,14 @@ p {
   }
 
   .hero {
-    padding: 80px 0;
+    padding: 80px 20px;
   }
 
   .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .about-section {
     padding: 0;
     text-align: center;
   }
