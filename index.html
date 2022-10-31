@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alina Vakulenko - Front-end developer from Ukraine. Alina seeks for new job opportinities in Web Development. See her projects built with HTML5, CSS3 and JavaScript and get in touch for job offers."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,32 +30,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/portfolio.css" />
-    <title>Alina Vakulenko - Frontend developer</title>
+    <title>Alina Vakulenko - Front-end developer</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/">
-          <img
-            src="/images/logo.png"
-            alt="logo"
-            class="logo d-none d-md-block"
-          />
-          <img
-            src="/images/logo-small.jpg"
-            alt="logo-small"
-            class="logo d-block d-md-none"
-          />
-        </a>
+        <a href="/" title="Homepage" class="logo"> AV </a>
         <ul>
           <li class="active">
-            <a href="/">Home</a>
+            <a href="/" title="Homepage">Home</a>
           </li>
           <li>
-            <a href="/about.html">About</a>
+            <a href="/about.html" title="About Alina Vakulenko">About</a>
           </li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/work.html" title="Recent projects">Work</a></li>
+          <li>
+            <a href="/index.html#contact" title="Contact Alina Vakulenko"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
@@ -59,32 +56,43 @@
       <h2>👋🏻 Hi, I am</h2>
       <h1>Alina Vakulenko</h1>
       <div class="header-weight-normal mb-5 mt-3 mt-md-4">
-        Frontent Developer, based in Ukraine
+        Front-end Developer, based in Ukraine
       </div>
-      <a href="#" class="btn btn-main">Contact me</a>
+      <a
+        href="/index.html#contact"
+        class="btn btn-main"
+        title="Contact Alina Vakulenko"
+        >Contact me</a
+      >
     </div>
     <div class="header-weight-normal font-18 text-center m-4 m-md-5">
-      My projects
+      Check out projects I've been working on recently
     </div>
     <div class="container">
       <div class="row mb-4 mb-md-5">
         <div class="col d-none d-lg-block">
           <img
-            src="/images/yogurt.png"
-            alt="yogurt-app-image"
-            class="img-fluid"
+            src="/images/diy.png"
+            alt="diy-page-image"
+            class="img-fluid diy"
           />
         </div>
         <div class="col">
           <div class="project-description">
-            <h2 class="mb-4 mb-md-5">Yogurt Project</h2>
+            <h2 class="mb-4 mb-md-5">DIY Project</h2>
             <p class="mb-3 mb-md-5 text-muted">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows by
             </p>
-            <a href="#" class="btn btn-secondary">Learn more</a>
+            <a
+              href="https://papaya-kulfi-2de86f.netlify.app/"
+              target="_blank"
+              class="btn btn-secondary"
+              title="Hosted on Netlify"
+              >Launch project</a
+            >
           </div>
         </div>
       </div>
@@ -98,39 +106,46 @@
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows by
             </p>
-            <a href="#" class="btn btn-secondary">Learn more</a>
+            <a
+              href="https://loquacious-babka-a057ff.netlify.app/#"
+              target="_blank"
+              class="btn btn-secondary"
+              title="Hosted on Netlify"
+              >Launch project</a
+            >
           </div>
         </div>
         <div class="col d-none d-lg-block">
           <img
-            src="/images/weather.png"
+            src="/images/weather-app.png"
             alt="weather-app-image"
-            class="img-fluid"
+            class="img-fluid weather"
           />
         </div>
       </div>
       <div class="row mb-4 mb-md-5">
         <div class="col d-none d-lg-block">
           <img
-            src="/images/dictionary.png"
-            alt="dictionary-app-image"
-            class="img-fluid"
+            src="/images/diy.png"
+            alt="diy-page-image"
+            class="img-fluid diy"
           />
         </div>
         <div class="col">
           <div class="project-description">
-            <h2 class="mb-3 mb-md-5">Dictionary App</h2>
+            <h2 class="mb-3 mb-md-5">The Next App</h2>
             <p class="mb-3 mb-md-5 text-muted">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows by
             </p>
-            <a href="#" class="btn btn-secondary">Learn more</a>
+            <a href="#" class="btn btn-secondary">Coming soon</a>
           </div>
         </div>
       </div>
-      <footer>
+
+      <footer id="contact">
         <div
           class="contact-block justify-content-between mb-5 d-none d-md-flex"
         >
@@ -139,19 +154,49 @@
             <p class="text-muted">Let's work together</p>
           </div>
           <div>
-            <a href="#" class="btn btn-main m-3">Contact me</a>
+            <a
+              href="mailto:alina.vakulenko12@gmail.com"
+              class="btn btn-main m-3"
+              title="Send email"
+              >Contact me</a
+            >
           </div>
         </div>
         <a
           href="mailto:alina.vakulenko12@gmail.com"
           class="email-link m-5 d-flex justify-content-center"
+          title="Send email"
           >alina.vakulenko12@gmail.com</a
         >
         <div class="social-links d-flex justify-content-center">
-          <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a
+            href="https://github.com/alina-vakulenko"
+            title="GitHub"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/alina-vakulenko/"
+            title="LinkedIn"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://t.me/Vakulenko_Alina"
+            title="Telegram"
+            target="_blank"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
         </div>
+        <p class="text-center mt-5">
+          This website was coded by Alina Vakulenko, and is
+          <a
+            href="https://github.com/alina-vakulenko/portfolio-project"
+            title="See on GitHub"
+            target="_blank"
+            >open-sourced</a
+          >
+        </p>
       </footer>
     </div>
   </body>

@@ -27,7 +27,7 @@ p {
   margin: 0;
 }
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 nav ul {
   padding: 0;
@@ -36,25 +36,46 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  line-height: 42px;
+  line-height: 60px;
   margin-left: 15px;
 }
 nav a {
   text-decoration: none;
   color: var(--default-text-color);
-  line-height: 1.5;
   font-weight: 500;
   transition: all 100ms ease-in-out;
+}
+nav a.logo {
+  font-size: 36px;
+  border: 3px solid var(--default-text-color);
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+nav a.logo:hover {
+  font-size: 36px;
+  border: 3px solid var(--default-text-color);
+  color: var(--default-text-color);
 }
 nav a:hover,
 nav li.active a {
   color: var(--primary-color);
 }
-footer {
-  margin: 60px 0;
+
+img {
+  background: var(--secondary-color);
+  border-radius: 10px;
 }
+img.diy {
+  padding: 100px 50px;
+}
+img.weather {
+  padding: 131px 50px;
+}
+
 .content-container {
-  padding: 160px 20px;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .content {
   margin: 20px 40px;
@@ -62,6 +83,7 @@ footer {
 .hero {
   background: var(--secondary-color);
   text-align: center;
+  padding-bottom: 80px;
 }
 .hero h1 {
   font-size: 96px;
@@ -81,12 +103,6 @@ footer {
 .font-18 {
   font-size: 18px;
   line-height: 1.5;
-}
-.font-24 {
-  font-size: 24px;
-}
-.font-36 {
-  font-size: 36px;
 }
 .font-48 {
   font-size: 48px;
@@ -122,21 +138,22 @@ footer {
 .project-description {
   padding: 80px 40px;
 }
-.logo {
-  max-height: 40px;
+.my-photo {
+  margin: 0 auto;
+  width: 80%;
 }
-
+footer {
+  margin: 60px 0;
+}
 footer .email-link {
   text-decoration: none;
   color: black;
   font-size: 24px;
 }
-
 footer .email-link:hover {
   color: var(--primary-color);
   transition: all 150ms ease-in-out;
 }
-
 footer .social-links a {
   margin: 0 20px;
   color: var(--primary-color);
@@ -146,7 +163,6 @@ footer .social-links a {
   font-size: 18px;
   transition: all 150ms ease-in-out;
 }
-
 footer .social-links a:hover {
   color: var(--secondary-color);
   background: var(--primary-color);
@@ -167,7 +183,6 @@ footer .contact-block p {
   }
 
   .content-container {
-    padding: 80px 20px;
     text-align: center;
   }
 
